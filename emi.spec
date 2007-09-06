@@ -1,6 +1,6 @@
 %define name	emi
 %define version	1.5.1
-%define release %mkrel 2
+%define release %mkrel 3
 
 %define python_compile_opt python -O -c "import compileall; compileall.compile_dir('.')"
 %define python_compile     python -c "import compileall; compileall.compile_dir('.')"
@@ -45,22 +45,16 @@ echo 'cd /usr/share/emi' >> $RPM_BUILD_ROOT/%_bindir/%name
 echo 'python EMI.py $@' >> $RPM_BUILD_ROOT/%_bindir/%name
 chmod 755 $RPM_BUILD_ROOT/%_bindir/%name
 
-#menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="EMI" longtitle="Ecasound Mastering Interface" section="Multimedia/Sound" xdg="true"
-EOF
-
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=%{name}
-Comment=%{Summary}
+Comment=Ecasound Mastering Interface
 Exec=%{name} -c
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo
+Categories=AudioVideo;Audio;AudioVideoEditing;
 EOF
 
 
@@ -86,7 +80,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc doc
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
