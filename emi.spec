@@ -14,6 +14,7 @@ Source:		http://emi.thevtek.com/tarball/EMi_%{version}.zip
 URL:		http://emi.thevtek.com/
 License:	Python license
 Group:		Sound
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 BuildRequires:	ImageMagick python
