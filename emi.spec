@@ -17,7 +17,7 @@ Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
-BuildRequires:	ImageMagick python
+BuildRequires:	imagemagick python
 Requires:	pyecasound tkinter
 
 %description
