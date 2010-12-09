@@ -1,6 +1,6 @@
 %define name	emi
 %define version	1.5.1
-%define release %mkrel 6
+%define release %mkrel 7
 
 %define python_compile_opt python -O -c "import compileall; compileall.compile_dir('.')"
 %define python_compile     python -c "import compileall; compileall.compile_dir('.')"
