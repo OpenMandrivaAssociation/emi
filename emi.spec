@@ -88,3 +88,55 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
 %{_datadir}/applications/*
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.5.1-7mdv2011.0
++ Revision: 618229
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 1.5.1-6mdv2010.0
++ Revision: 428599
+- rebuild
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.5.1-5mdv2009.0
++ Revision: 244887
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 1.5.1-3mdv2008.1
++ Revision: 136403
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu Sep 06 2007 Funda Wang <fwang@mandriva.org> 1.5.1-3mdv2008.0
++ Revision: 80905
+- Rebuild
+- Import emi
+
+
+
+
+* Mon Aug 07 2006 Lenny Cartier <lenny@mandriva.com> 1.5.1-2mdv2007.0
+- xdg
+
+* Sat Apr 29 2006 Austin Acton <austin@mandriva.org> 1.5.1-1mdk
+- 1.5.1
+
+* Mon Dec 27 2004 Austin Acton <austin@mandrake.org> 1.2.1-1mdk
+- 1.2.1
+
+* Sat May 8 2004 Austin Acton <austin@mandrake.org> 1.0-2mdk
+- fix /usr/python
+- fix file permissions
+- compile bytecode
+
+* Sat May 8 2004 Austin Acton <austin@mandrake.org> 1.0-1mdk
+- initial package
