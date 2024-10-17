@@ -11,7 +11,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		http://emi.thevtek.com/tarball/EMi_%{version}.zip
-URL:		http://emi.thevtek.com/
+URL:		https://emi.thevtek.com/
 License:	Python license
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
